@@ -1,28 +1,157 @@
-body{
-    margin: 0;
-    background-color: #333;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
-    
-
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-footer {
-    width: 100%;
-    height: 50px;
-    background-color: #000;
-    color: gold;
-    text-align: center;
-    bottom: 0;
-    font-size: 1.3em;
+body {
+	background: #0b1736;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+
+.contenedor {
+	width: 98%;
+	height: 100%;
+	max-width: 2000px;
+	margin: auto;
+	padding: 2px 0;
+	display: grid;
+    grid-template-columns: 4fr 1fr;
+	gap:20px;
+}
+
+
+.card {
+	
+	border-radius: 5px;
+	min-height: 800px;
+	font-weight: bold;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: top center;
+}
+
+.card .textos {
+
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;	
+	
+}
+
+.enlace {
     position: absolute;
-    padding: 0.5em 0;
-    
+    padding: 20px 5px;
 }
 
-.alert {
-    height: 85vh;
+.logo {
+    height: 40px;
+}
+
+nav ul {
+	right: 0%;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 5px;
+	margin:auto;
+}
+
+nav ul li a{
+    color:antiquewhite;
+    font-size:13px;
+    padding: 8px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background: rebeccapurple;
+    transition: .5s;
+}
+
+.ckeckbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height:80px ;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+nav{ 
+    background: rgb(104, 10, 5);
+    width: 100%;
+	min-height: 50px;  
+}
+
+footer{
+	height: 40px;
+	background-color: rgb(71, 5, 5);
+	text-align: center;
+	padding: 11px;
+}
+
+.firma {
+	width: px;
+	height: 150px;
+}
+
+#hamburger-menu {
+	display: block;
+	visibility: hidden;
+}
+
+.topnav #mobile-menu {
+	display: none;
+}
+
+
+
+ /* Styles for mobile screens */
+@media screen and (max-width: 800px) {
+	#large-menu {
+		display: none;
+	}
+
+	#hamburger-menu {
+		display: block;
+		visibility: visible;
+	}
+
+	/* Style navigation menu links */
+	.topnav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+	
+	/* Style the hamburger menu */
+	.topnav a.icon {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	/* Add a grey background color on mouse-over */
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
 }

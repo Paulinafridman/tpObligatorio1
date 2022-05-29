@@ -1,86 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/estilos.css">
-	<!--<link rel="stylesheet" href="css/Galleria.css">-->
-	<link rel="stylesheet" href="css/fontello.css">
-	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="js/main.js"></script>
-	<!--<script src="./js/main.js" > -->
-	<title>Felipe Wolfsdorf</title>
-</head>
-<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/fontello.css">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="js/main.js"></script>
+		<title>Felipe Wolfsdorf</title>
+	</head>
 
-<body>
-	<header>
-		<div class="menu_bar">
-			<a href="#" class="btmenu"><span class="icon-menu"></span></a>
+
+	<body>
+		<div class="container">
+			<header>
+				<div class="menu_bar">
+					<a href="#" class="btmenu"><span class="icon-menu"></span></a>
+				</div>
+				<div>
+					<nav class="topnav">
+						<a id="hamburger-menu" href="javascript:void(0)" class="icon" onclick="toggleMobileMenu()">
+							<i class="fa fa-bars"></i>
+						</a>
+						<ul id="large-menu">
+							<li><a clase="active" href="index.html">Home</a></li>
+							<li><a href="catalogo.html">Catalogo</a></li>
+							<li><a href="obras.html">Obras</a></li>
+							<li><a href="#">Biografia</a></li>
+							<li><a href="reportaje.html">Reportaje</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+						<div id="mobile-menu">
+							<a href="Index.html">Home</a>
+							<a href="catalogo.html">Catalogo</a>
+							<a href="obras.html">Obras</a>
+							<a href="#">Biografia</a>
+							<a href="reportaje.html">Reportaje</a>
+							<a href="#">Contacto</a>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<div class="cards">
+				<div class="card">
+					<div class="container">
+						<img src="./img/4.jpg" alt="Plumaje">
+					</div>
+				</div>
+				<div class="card">
+					<div class="detalle">
+						<h3></h3>
+						<p> "El arte es el camino para llegar a comprender al alma"
+							<br>
+							<br>
+						</p>
+					<div class="firma"> 
+						<img src="./img/FIRMA.jpg" alt="">
+					</div>
+					</div>
+				</div>
+			</div>	
+
+			<footer>
+				<p> copyright &copy; 2022  </p>
+			</footer>
 		</div>
-		<div>
-			<nav class="topnav">
-				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-				<a id="hamburger-menu" href="javascript:void(0)" class="icon" onclick="toggleMobileMenu()">
-					<i class="fa fa-bars"></i>
-				</a>
-				<ul id="large-menu">
-					<li><a clase="active" href="index.html">Home</a></li> <!-- -->
-					<li><a href="catalogo.html">Catalogo</a></li>
-					<li><a href="obras.html">Obras</a></li>
-					<li><a href="#">Biografia</a></li>
-					<li><a href="#">Fotos</a></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-				<div id="mobile-menu">
-					<a href="Index.html">Home</a>
-					<a href="catalogo.html">Catalogo</a>
-					<a href="obras.html">Obras</a>
-					<a href="#">Biografia</a>
-					<a href="#">Fotos</a>
-					<a href="#">Contacto</a>
-				</div>
-			</nav>
-		</div>
-	</header>
-
-
-	<div class="contenedor">
-		<div class="cards">
-			
-			<div class="card card2">
-				<div class="container">
-					<img src="./img/4.jpg" alt="Plumaje">
-				</div>
-			</div>
-			<div class="card card1">
-				<div class="container">
-
-				</div>
-				<div class="detalle">
-					<h3></h3>
-					<p> "El arte es el camino para llegar a comprender al alma"
-						<br>
-						<br>
-						M. C. (CARETAS, Lima)
-					</p>
-				</div>
-			</div>
-
-		</div>		
-	</div>
-
-</body>
-
-
-<footer class="footer">&copy; 
-		Copyright 2021
-	</footer>
+	</body>
 
 </html>

@@ -14,112 +14,93 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+    <!-- <style>
+
+      div {
+          border: 1px solid red;
+          background-color: yellow;
+          color: darkred;
+          margin: 2px 0 10px 0;
+          border-radius: 5px;
+          display: none;
+      }
+
+      button {
+          display: block;
+          margin-top: 20px;
+          
+      }
+  </style> -->
+  
 </head>
 <body>
-    <title>Formulario</title>
-    <h2 class="descripcion">Formulario de registro</h2>
-    <!-- <form action="show_data.html" target="_blank">
-        <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname"
-            placeholder="Ingrese su nombre aqui..."> <br><br>
-        <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname"
-            placeholder="Ingrese su apellido aqui..."> <br><br>
-        <label for="street">Direccion:</label><input type="text" name="address"
-            placeholder="Ingrese su dirección aqui..."> <br><br>
-        <label for="number">Numero:</label><input type="number" name="number" placeholder="Ingrese el numero..">
-        <br><br>
-        <label for="city">Ciudad: </label><input type="text" name="city" value="C.A.B.A."> <br><br>
-        <label for="zipcode">Código Postal:</label><input type="text" name="zipcode"
-            placeholder="Ingrese su codigo postal aqui..."> <br> <br>
-        <label for="telefono">Telefono: </label><input type="tel" name="telefono"
-            placeholder="ingrese su telefono aqui ...."> <br><br>
-        <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label> <input type="date" name="birthdate"> <br><br>
-        <label for="clave">Clave: </label><input type="password" name="clave"> <br><br>
-        <label for="mail">Mail: </label><input type="email" name="mail"> <br><br>
-        <label for="url">Link del TP 3: </label><input type="url" name="url"> <br><br>
-
-        <p>Género (Radio)
-            <input type="radio" name="gender" value="hombre" checked>Hombre
-            <input type="radio" name="gender" value="Mujer">Mujer
-            <input type="radio" name="gender" value="Otro"> Otro
-        </p>
-        <p> Conocimientos previos: (checkbox)
-            <input type="checkbox" name="conocimientos" value="HTML"> HTML
-            <input type="checkbox" name="conocimientos" value="CSS"> CSS
-            <input type="checkbox" name="conocimientos" value="BOOTSTRAP"> Bootstrap
-            <input type="checkbox" name="conocimientos" value="Javascript"> Javascript
-            <input type="checkbox" name="conocimientos" value="Typescript"> Typescript
-            <input type="checkbox" name="conocimientos" value="Angular"> Angular
-            <input type="checkbox" name="conocimientos" value="BaseDeDatos"> Base de Datos
-            <input type="checkbox" name="conocimientos" value="Python"> Python
-            <input type="checkbox" name="conocimientos" value="Django"> Django
-        </p>
-
-        <label for="estudios">Estudios: (Select)</label>
-        <select id="estudios" name="estudios">
-            <option value="primaria">Primaria</option>
-            <option value="secundaria">Secundaria</option>
-            <option value="terciario">Terciario</option>
-            <option value="universitario">Universitario</option>
-        </select>
-        <br>
-
-        <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="10" cols="30"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-        <button type="reset">Reset</button>
-        <br>
-        <a href="index.html#home">Volver</a> -->
-
-        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-        <form class="descripcion">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputName">Nombre:</label>
-                  <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre:">
+  <div class="resume">
+      <title>Formulario</title>
+      <div class="resume">
+        <div class="row">
+            <div class="column">
+                <div class="descripcion">
+                    <h2 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Formulario de contacto</h2>
+                    <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Ingrese sus datos para recibir informacion detallada a cerca de las obras expuestas
+                         en nuestra pagina.
+                         Desde ya agradecemos su contacto.
+                        <br>
+                        <br>
+                        M. C. (CARETAS, Lima)
+                    </h3>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="inputLastName">Apellido</label>
-                  <input type="text" class="form-control" id="inputLastName" placeholder="Ingrese su apellido">
-                </div>
-              </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email:</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="Phone">Telefono:</label>
-                <input type="text" class="form-control" id="inputPassword4" placeholder="ingrese un telefono">
-              </div>
             </div>
-            <div class="form-group">
-              <label for="inputDireccion">Direccion:</label>
-              <input type="text" class="form-control" id="inputDireccion" placeholder="Barrio / Residencia">
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCiudad">Ciudad</label>
-                <input type="text" class="form-control" id="inputCiudad">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputlocalidad">Localidad</label>
-                <input id="inputlocalidad" class="form-control" type="text">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputEdad">Edad</label>
-                <input type="text" class="form-control" id="inputEdad">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-check">
-              <p>Género
-                <input type="radio" name="gender" value="hombre" checked>Hombre
-                <input type="radio" name="gender" value="Mujer">Mujer
-                <input type="radio" name="gender" value="Otro"> Otro
-            </p>
-            </div>
-            <button type="submit" class="btn btn-primary">Subscribirse</button>
-        </form>
+            <div class="column">
+                <form class="descripcion" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputName">Nombre:</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre:">
+                        <div class="validacion" style="display: none; border: 1px solid red; background-color: yellow; color: darkred; margin: 2px 0 10px 0; border-radius: 5px;" >Campo no válido</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputLastName">Apellido</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Ingrese su apellido">
+                        <div class="validacion" style="display: none; border: 1px solid red; background-color: yellow; color: darkred; margin: 2px 0 10px 0; border-radius: 5px;" >Campo no válido</div>
+                      </div>
+                    </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email:</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      <div class="validacion" style="display: none; border: 1px solid red; background-color: yellow; color: darkred; margin: 2px 0 10px 0; border-radius: 5px;" >Campo no válido</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="Phone">Telefono:</label>
+                      <input type="tel" class="form-control" id="inputPassword4" placeholder="Ingrese un telefono">
+                      <div class="validacion" style="display: none; border: 1px solid red; background-color: yellow; color: darkred; margin: 2px 0 10px 0; border-radius: 5px;" >Campo no válido</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputDireccion">Direccion:</label>
+                    <input type="text" class="form-control" id="inputDireccion" placeholder="Barrio / Residencia">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCiudad">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCiudad">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputlocalidad">Localidad</label>
+                      <input id="inputlocalidad" class="form-control" type="text">
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="inputEdad">Edad</label>
+                      <input type="number" class="form-control" id="inputEdad" min="18" max="100">
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Subscribirse</button>
+                </form>
+            </div> 
+        </div>
+    </div>
+          
+  </div>
 </body>
 </html>

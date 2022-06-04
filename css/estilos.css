@@ -14,6 +14,10 @@ body {
     background-image: url("../img/img-back.jpg");
     background-size: cover;
     background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    /*max-height: 100px;*/
+    
+
 }
 
 footer {
@@ -23,14 +27,23 @@ footer {
 	background-image: url("../img/P1150834.jpg");
     color: #fff;
     text-align: center;
-    bottom: 0;
+    bottom: -200px;
     font-size: 1.3em;
-    position: absolute;
+    position: relative;
     padding: 0.5em 0; 
     /* padding-top: 40px;  */
+    /* display: grid;
+    grid-template-rows: auto ifr auto; */
+    justify-content: center;
+}
+.firma {
+	width: 130%;
+    border-radius: 20px 20px 20px 20px;
+}
+/* .parent {
     
 }
-/* footer{
+footer{
 	text-align: center;
     bottom: 0;
     background-image: url("../img/P1150834.jpg");
@@ -101,6 +114,11 @@ flex-direction: row;
 justify-content: space-around;
 }
 
+.navbar {
+    /* background-color: rgb(172, 85, 172) !important; */
+    background-image: url("../img/P1150834.jpg") !important;
+}
+
 /* @media screen and (max-width:1200px) {
     .column{
         width: 10%;
@@ -118,6 +136,13 @@ justify-content: space-around;
     padding:10px;
      font-family:'Times New Roman', Times, serif;
     font-size:1.8rem
+}
+
+.validacion {
+    color:  whitesmoke;
+    padding:10px;
+     font-family:'Times New Roman', Times, serif;
+    font-size:1rem;
 }
 
 .container {
